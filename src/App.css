@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+/* Header Area  */
+.navbar {
+  padding: 0 !important;
+  position: relative;
+}
+.nav__link {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav__link:hover {
+  border-bottom: 5px solid #d9b2ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart__icon {
+  position: relative;
+}
+.cart__quantity {
+  position: absolute;
+  top: 2px;
+  margin-left: 2px;
+  font-family: "Poppins", sans-serif;
+}
+.shop__btn {
+  width: 220px !important;
+  height: 55px !important;
+  border-radius: 0 !important;
+  line-height: 34px !important;
+}
+.far {
+  color: #ffffff !important  ;
+  font-size: 20px !important;
+}
+/* End Header Area  */
+/* Story Area  */
+.story__section {
+  padding: 100px 50px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.story__title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+/* Banner Area  */
+.banner__image__area {
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+}
+.banner__text__area {
+  position: absolute;
+  left: 55%;
+  top: 75%;
+  width: 480px;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #ecd8ff 0%, #ffffff 100%);
+}
+.banner__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+}
+.banner__sub__section__text {
+  font-weight: 600;
+  line-height: 24px;
+}
+/* End Banner Area  */
+
+/* CTA Area  */
+.CTA__AREA {
+  background: linear-gradient(0deg, #ededed 0%, #d9b2ff 100%);
+  padding: 150px 50px;
+}
+.cta__title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: black;
+  letter-spacing: 7px;
+}
+/* END CTA Area  */
+
+/* Footer area  */
+.footer__area {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer__social__icon ul {
+  display: flex;
+  text-align: left;
+  list-style: none;
+}
+.footer__social__icon ul li {
+  padding: 10px 10px;
+}
+.footer__social__icon ul li > .fab {
+  color: white !important;
+}
+.footer__text {
+  vertical-align: bottom;
+}
+/* Sidebar CSS  */
+.social__icon {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+.social__icon ul {
+  padding: 2px;
+  background-color: #ffffff;
+}
+.social__icon ul li {
+  padding: 3px;
+  color: black;
+}
+.fab {
+  font-size: 24px !important;
+  cursor: pointer;
+}
+.sticky__text {
+  position: fixed;
+  top: 50%;
+  right: -5%;
+  transform: translateX(-50%);
+  z-index: 999;
+  transform: rotate(-90deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.frame__logo {
+  transform: rotate(-90deg);
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
 }
